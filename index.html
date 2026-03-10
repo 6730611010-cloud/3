@@ -2,207 +2,79 @@
 <html lang="th">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-<title>เสียงสะท้อนของกลองทัดที่มีต่อคณะสถาปัตยกรรมศาสตร์</title>
-
-<link href="https://fonts.googleapis.com/css2?family=Sarabun:wght@300;400;700&family=Prompt:wght@400;600&display=swap" rel="stylesheet">
+<title>เสียงสะท้อนของกลองทัดที่มีต่อคณะสถาปัตย์</title>
 
 <style>
 
-:root {
---primary-dark: #36250D;
---accent-color: #8B4513;
---gold-color: #CC6600;
---bg-color: #FEFAE6;
---card-bg: #FFFFFF;
---text-main: #333;
---text-light: #696969;
-}
-
 body{
-font-family:'Sarabun',sans-serif;
+font-family: Arial, sans-serif;
 margin:0;
-padding:0;
-background-color:var(--bg-color);
-color:var(--text-main);
-line-height:1.8;
+background:#FEFAE6;
 }
 
 header{
-background:var(--primary-dark);
+background:#36250D;
 color:white;
-padding:40px 20px;
+padding:20px;
 text-align:center;
-box-shadow:0 4px 10px rgba(0,0,0,0.3);
-}
-
-header h2{
-font-family:'Prompt',sans-serif;
-letter-spacing:5px;
-margin:0;
-font-weight:300;
 }
 
 .container{
-max-width:900px;
-margin:-30px auto 40px;
-background:var(--card-bg);
-padding:50px;
-border-radius:15px;
-box-shadow:0 10px 30px rgba(0,0,0,0.1);
+width:950px;
+margin:auto;
+background:#FFFFFF;
+padding:20px;
+margin-top:20px;
+box-shadow:0 4px 12px rgba(0,0,0,0.15);
 }
 
 h1{
-font-family:'Prompt',sans-serif;
-color:var(--primary-dark);
-line-height:1.3;
-margin-bottom:20px;
-font-size:2.3rem;
-text-align:center;
-}
-
-.sub-headline{
-color:var(--accent-color);
-font-size:1.2rem;
-font-weight:bold;
-border-left:4px solid var(--gold-color);
-padding-left:15px;
-margin:30px 0;
-text-indent:0!important;
+margin-bottom:5px;
 }
 
 .date{
-color:var(--text-light);
-font-size:0.9rem;
+color:gray;
+font-size:14px;
 margin-bottom:20px;
-border-bottom:1px solid #eee;
-padding-bottom:10px;
-text-align:center;
 }
 
 img{
-max-width:100%;
-height:auto;
-border-radius:8px;
-margin:20px 0;
-transition:transform 0.3s ease;
-}
-
-img:hover{
-transform:scale(1.02);
-}
-
-.img-caption{
-text-align:center;
-font-size:0.9rem;
-color:var(--text-light);
-margin-top:-10px;
-margin-bottom:30px;
-font-style:italic;
-text-indent:0!important;
-}
-
-.section-title{
-color:#660000;
-font-family:'Prompt',sans-serif;
-font-size:1.8rem;
-margin-top:50px;
-border-bottom:2px solid #660000;
-display:inline-block;
+width:100%;
+border-radius:10px;
+margin:15px 0;
 }
 
 p{
-text-indent:2em;
-margin-bottom:20px;
-text-align:justify;
-}
-
-.quote-box{
-background:#f9f4f2;
-padding:30px;
-border-left:8px solid var(--primary-dark);
-margin:40px 0;
-border-radius:0 10px 10px 0;
-}
-
-.author-info{
-text-align:right;
-margin-top:15px;
-}
-
-.author-name{
-color:var(--gold-color);
-font-weight:bold;
-font-size:1.1rem;
-margin:0;
-}
-
-.author-title{
-color:var(--text-light);
-font-size:0.85rem;
-margin:0;
-}
-
-.feature-grid{
-display:flex;
-gap:20px;
-justify-content:center;
-flex-wrap:wrap;
-margin:30px 0;
-}
-
-.instrument-details{
-background:#fdfdfd;
-border:1px dashed #ccc;
-padding:25px;
-border-radius:10px;
-margin-top:40px;
-}
-
-hr{
-border:0;
-height:1px;
-background-image:linear-gradient(to right,rgba(0,0,0,0),rgba(0,0,0,0.1),rgba(0,0,0,0));
-margin:50px 0;
-}
-
-.final-quote{
-text-align:center;
-font-weight:bold;
-color:var(--primary-dark);
-font-size:1.3rem;
-padding:40px 0;
-line-height:1.6;
-}
-
-.team-section{
-text-align:center;
-background:#f4f4f4;
-padding:25px;
-border-radius:10px;
-margin-top:40px;
+line-height:1.7;
 }
 
 footer{
 text-align:center;
-padding:40px;
+padding:20px;
 color:#777;
-font-size:0.9rem;
 }
 
-.edu-info{
-font-size:0.8rem;
-color:#999;
-margin-top:30px;
-line-height:1.6;
+.center{
 text-align:center;
 }
 
-@media(max-width:768px){
-.container{padding:25px;margin:10px;}
-h1{font-size:1.6rem;}
-.feature-grid img{width:100%!important;}
+.quote{
+background:#E4D5D3;
+padding:15px;
+border-left:5px solid #440E03;
+margin:20px 0;
+}
+
+.author{
+text-align:right;
+color:#CC6600;
+font-weight:bold;
+}
+
+.role{
+text-align:right;
+color:#696969;
+font-size:12px;
 }
 
 </style>
@@ -211,82 +83,169 @@ h1{font-size:1.6rem;}
 <body>
 
 <header>
-<h2>" เรื่องเล่า "</h2>
+<h2>"เรื่องเล่า"</h2>
 </header>
 
 <div class="container">
 
-<h1>
-เสียงสะท้อนของกลองทัด<br>
-ที่มีต่อคณะสถาปัตยกรรมศาสตร์
-</h1>
+<div class="center">
+<h1>เสียงสะท้อนของกลองทัดที่มีต่อคณะสถาปัตย์</h1>
 
-<div class="date">10 มีนาคม 2569</div>
-
-<p class="sub-headline">
+<p style="color:#8B4513;font-size:20px;">
 จากเครื่องดนตรีไทยสู่สัญลักษณ์อันทรงเกียรติประจำคณะสถาปัตยกรรมศาสตร์
 เสียงที่ดังกึกก้องคือเสียงของหัวใจที่เต้นพร้อมกัน
 </p>
 
-<div style="text-align:center;">
-<img src="./กลอง1.jpg" style="max-width:600px;">
-<p class="img-caption">การฝึกซ้อมกลองของนักศึกษาคณะสถาปัตยกรรมศาสตร์</p>
 </div>
 
-<h3 class="section-title">จุดเริ่มต้นแห่งตำนาน</h3>
-
-<div class="feature-grid">
-<img src="./1.jpg" style="width:400px;">
-<img src="./2.jpg" style="width:330px;">
+<div class="date">
+10 มีนาคม 2569
 </div>
 
-<p>
-กลองทัดเริ่มต้นบทบาทในแวดวงสถาปัตยกรรมจาก คณะสถาปัตยกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย 
-ซึ่งก่อนหน้านั้นมีการใช้ "กลองทอม" เป็นหลัก กระทั่งได้รับพระราชทานกลองทัดจาก 
-<b>สมเด็จพระกนิษฐาธิราชเจ้า กรมสมเด็จพระเทพรัตนราชสุดาฯ</b>
-ให้เป็นกลองประจำคณะ
+<div class="center">
+<img src="กลอง1.jpg" style="width:600px;">
+</div>
+
+<p style="text-align:center;font-size:14px;color:gray;">
+การฝึกซ้อมกลองของนักศึกษาคณะสถาปัตยกรรมศาสตร์
 </p>
 
-<div style="text-align:center;">
-<img src="./3.jpg" style="width:550px;">
-<p style="font-weight:bold;">สัญลักษณ์แห่งสถาปัตย์ทั่วไทย</p>
+<h2 style="color:#660000;">จุดเริ่มต้นแห่งตำนาน</h2>
+
+<p><b>จาก "กลองทอม" สู่ "กลองทัด"</b></p>
+
+<div class="center">
+<img src="1.jpg" style="width:430px;">
+<img src="2.jpg" style="width:350px;">
 </div>
 
-<hr>
+<p style="text-indent:50px;">
+กลองทัดเริ่มต้นบทบาทในแวดวงสถาปัตยกรรมจาก คณะสถาปัตยกรรมศาสตร์ จุฬาลงกรณ์มหาวิทยาลัย ...
+</p>
 
-<div class="final-quote">
+<br><br>
+
+<h2 style="color:#660000;">สัญลักษณ์แห่งสถาปัตย์ทั่วไทย</h2>
+
+<div class="center">
+<img src="3.jpg" style="width:550px;">
+</div>
+
+<p style="text-indent:50px;">
+ต่อมาคณะสถาปัตยกรรมศาสตร์ทั่วประเทศต่างนำกลองทัดมาใช้...
+</p>
+
+<hr style="margin:40px 0;">
+
+<h2 style="color:#660000;">จุดเริ่มต้นและความหมายของกลองทัดในมหาวิทยาลัยนเรศวร</h2>
+
+<div class="center">
+<img src="อจ.jpg" style="width:255px;">
+</div>
+
+<div class="quote">
+
+<p style="text-indent:50px;">
+กลองทัดของคณะสถาปัตยกรรมศาสตร์ มหาวิทยาลัยนเรศวร เริ่มต้นจากความตั้งใจของอาจารย์...
+</p>
+
+<p style="text-indent:50px;">
+อาจารย์มองว่ากลองทัดเปรียบเสมือนเสียงดนตรีที่ช่วยระดมพลัง...
+</p>
+
+</div>
+
+<p class="author">ดร.กีรติ สัทธานนท์</p>
+<p class="role">อาจารย์ที่ปรึกษาชมรมกลองทัด</p>
+
+<h2 style="color:#660000;">เสียงแห่งหัวใจที่เต้นพร้อมกัน</h2>
+
+<div class="center">
+<img src="ปท.jpg" style="width:250px;">
+</div>
+
+<div class="quote">
+
+<p style="text-indent:50px;">
+กลองทัดไม่ได้เป็นเพียงเครื่องดนตรี หากแต่เป็นสัญลักษณ์ของความสามัคคี...
+</p>
+
+</div>
+
+<p class="author">ศิรินทรา ดาผา</p>
+<p class="role">ประธานชมรม</p>
+
+<h2 style="color:#660000;">เส้นทางจากเสียงกลอง</h2>
+
+<div class="center">
+<img src="นปน.jpg" style="width:250px;">
+</div>
+
+<div class="quote">
+
+<p style="text-indent:50px;">
+การตีกลองทัดเปรียบเสมือนการปลดปล่อยพลังในตัวเอง...
+</p>
+
+</div>
+
+<p class="author">รุ่งทิวา ประสิทธิ์เขตกิจ</p>
+<p class="role">สมาชิกชมรมกลองทัด</p>
+
+<hr style="margin:40px 0;">
+
+<h2 style="color:#660000;" class="center">ทำความรู้จักลักษณะของกลองทัด</h2>
+
+<div class="center">
+<img src="อฟ.jpg" style="width:750px;">
+</div>
+
+<p style="text-indent:50px;">
+กลองทัดเป็นกลองขึงหนังสองหน้าขนาดใหญ่...
+</p>
+
+<br><br>
+
+<div class="center">
+<b>
 กลองทัด <br>
-"สัญลักษณ์แห่งความสามัคคีและรากวัฒนธรรมไทย"
+"สัญลักษณ์แห่งความสามัคคีและรากวัฒนธรรมไทย <br>
+เครื่องดนตรีที่สืบทอดมรดกทางวัฒนธรรมและความภาคภูมิใจของสถาปัตย์ไทย"
+</b>
 </div>
 
-<div class="team-section">
+<br><br>
 
-<p style="font-weight:bold;text-decoration:underline;">
-คณะผู้จัดทำ
-</p>
+<h3 style="text-align:right;color:#696969;">คณะผู้จัดทำ</h3>
 
-<p>
-ณัฐวุฒิ สอนไว • ธนชิต บรรเจิด • ศศธร แก้วสูงเนิน <br>
-กนกภัณฑ์ คำอิน • ปวริศา หิรัญกุล • ชญาภา วงษ์ธัญญะ
-</p>
+<p style="text-align:right;color:#CC6600;">ณัฐวุฒิ สอนไว</p>
+<p style="text-align:right;color:#CC6600;">ธนชิต บรรเจิด</p>
+<p style="text-align:right;color:#CC6600;">ศศธร แก้วสูงเนิน</p>
+<p style="text-align:right;color:#CC6600;">กนกภัณฑ์ คำอิน</p>
+<p style="text-align:right;color:#CC6600;">ปวริศา หิรัญกุล</p>
+<p style="text-align:right;color:#CC6600;">ชญาภา วงษ์ธัญญะ</p>
 
+<br>
+
+<div class="date">
+เว็บไซต์นี้จัดทำขึ้นเพื่อใช้เป็นสื่อประกอบการศึกษาเกี่ยวกับกลองทัดของคณะสถาปัตยกรรมศาสตร์ มหาวิทยาลัยนเรศวร
 </div>
 
-<div class="edu-info">
+<div class="date">
+ภาพจาก 
+<a href="https://www.facebook.com/profile.php?id=100054545285694" target="_blank">
+Facebook กลองทัดสถาปัตย์
+</a>
+</div>
 
-<p>
-เว็บไซต์นี้จัดทำขึ้นเพื่อใช้เป็นสื่อประกอบการศึกษา
-เกี่ยวกับกลองทัด คณะสถาปัตยกรรมศาสตร์ มหาวิทยาลัยนเรศวร
-</p>
-
-<img src="./ลก.jpg" style="width:140px;opacity:0.8;">
-
+<div class="center">
+<img src="ลก.jpg" style="width:200px;">
 </div>
 
 </div>
 
 <footer>
-เรื่องเล่า © 2026 | คณะสถาปัตยกรรมศาสตร์ มหาวิทยาลัยนเรศวร
+"เรื่องเล่า"
 </footer>
 
 </body>
